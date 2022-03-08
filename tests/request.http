@@ -15,7 +15,7 @@ GET http://localhost:3000/api/wilder/read HTTP/1.1
 content-type: application/json
 
 ### DELETE WILDERS 
-POST http://localhost:3000/api/wilder/622761129adc41ecb530339b/delete HTTP/1.1
+DELETE http://localhost:3000/api/wilder/622715d29cbf5cddeca1124f/delete HTTP/1.1
 content-type: application/json
 
 ### UPDATE WILDERS 
@@ -24,7 +24,7 @@ content-type: application/json
 
 {
     "name":"Http Wisdqeldsqdjjiikqsdeeer",
-    "city": "Paredis",
+    "city": "Pardsqdedis",
      "skills": [
     {
       "title": "HTML",

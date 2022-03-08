@@ -16,7 +16,6 @@ module.exports = {
     data
       .then((result) => res.json({ success: true, result: result }))
       .catch((err) => res.json({ success: false, result: err }));
-
   },
 
   update: (req, res) => {
@@ -36,6 +35,5 @@ module.exports = {
     data
       .then((result) => res.send(`Document with ${data.name} has been deleted..`))
       .catch((err) => res.json({ success: false, result: err }));
-
   },
 };

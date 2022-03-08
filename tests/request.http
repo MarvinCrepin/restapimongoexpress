@@ -19,9 +19,22 @@ POST http://localhost:3000/api/wilder/622761129adc41ecb530339b/delete HTTP/1.1
 content-type: application/json
 
 ### UPDATE WILDERS 
-POST http://localhost:3000/api/wilder/622761129adc41ecb530339b/update HTTP/1.1
+POST http://localhost:3000/api/wilder/622715d29cbf5cddeca1124f/update HTTP/1.1
 content-type: application/json
 
 {
-    "name":"Http Wisdqeldeeer"
+    "name":"Http Wisdqeldsqdjjiikqsdeeer",
+    "city": "Paredis",
+     "skills": [
+    {
+      "title": "HTML",
+      "votes": 10,
+      "_id": "622715d29cbf5cddeca11250"
+    },
+    {
+      "title": "Reeaeect",
+      "votes": 5,
+      "_id": "622715d29cbf5cddeca11251"
+    }
+  ]
 }

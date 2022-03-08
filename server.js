@@ -17,19 +17,13 @@ mongoose
   app.use(express.urlencoded({ extended: true }));
   app.use(express.json());
 
-  // routes
-  app.get("/", (req, res) => {
-    res.send("Hello World");
-  });
+// routes
+app.get("/", (req, res) => res.send("Hello World"))
 
-  app.post("/api/wilder/create", wilderController.create);
-
-  app.get('/api/wilder/read', wilderController.read)
-  
-  app.post('/api/wilder/:id/update', wilderController.update)
-
-  app.post('/api/wilder/:id/delete', wilderController.delete)
-
+app.post("/api/wilder/create", wilderController.create);
+app.get('/api/wilder/read', wilderController.read)
+app.post('/api/wilder/:id/update', wilderController.update)
+app.post('/api/wilder/:id/delete', wilderController.delete)
 
 // start server
 app.listen(3000, () => console.log("Server started on 3000"));

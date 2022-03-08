@@ -1,9 +1,6 @@
 // server.js
-const { application } = require("express");
 const express = require("express");
 const mongoose = require("mongoose");
-const Wilder = require("./models/Wilder");
-const WilderModel = require("./models/Wilder");
 const app = express();
 const wilderController = require("./controllers/wilders")
 //Database

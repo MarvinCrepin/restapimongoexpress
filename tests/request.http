@@ -3,7 +3,7 @@ POST http://localhost:3000/api/wilder/create HTTP/1.1
 content-type: application/json
 
 {
-    "name":"Http Wisdqelder",
+    "name":"Http Wisdeeqelder",
     "city": "Londres",
     "skills":[
         {"title":"express", "votes":5},
@@ -15,11 +15,11 @@ GET http://localhost:3000/api/wilder/read HTTP/1.1
 content-type: application/json
 
 ### DELETE WILDERS 
-DELETE http://localhost:3000/api/wilder/622762cfabaca9042552f293/delete HTTP/1.1
+DELETE http://localhost:3000/api/wilder/62277b818007eb62e7ff67ae/delete HTTP/1.1
 content-type: application/json
 
 ### UPDATE WILDERS 
-POST http://localhost:3000/api/wilder/622715d29cbf5cddeca1124f/update HTTP/1.1
+POST http://localhost:3000/api/wilder/62277be17397d0f1cbbcbabe/update HTTP/1.1
 content-type: application/json
 
 {

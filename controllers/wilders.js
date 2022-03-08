@@ -20,7 +20,8 @@ module.exports = {
 
   update: (req, res) => {
     const options = { new: true };
-
+    // On utilise la méthode findByIdAndDelete afin de retrouver le document et le supprimer
+    // On lui passe en paramètre l'id, le payload (les éléments du document à mettre à jour)
     const result = WilderModel.findByIdAndUpdate(req.params.id, req.body, options);
     result
       .then((result) => res.send(result))
@@ -30,10 +31,11 @@ module.exports = {
 
   delete: (req, res) => {
     const id = req.params.id;
+    // On utilise la méthode findByIdAndDelete afin de retrouver le document et le supprimer
     const data = WilderModel.findByIdAndDelete(id);
 
     data
-      .then((result) => res.send(`Document with ${data.name} has been deleted..`))
+      .then((result) => res.send(`Document avec l'id ${id} a bien été supprimé..`))
       .catch((err) => res.json({ success: false, result: err }));
   },
 };

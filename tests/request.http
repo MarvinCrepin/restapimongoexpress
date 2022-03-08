@@ -15,7 +15,7 @@ GET http://localhost:3000/api/wilder/read HTTP/1.1
 content-type: application/json
 
 ### DELETE WILDERS 
-DELETE http://localhost:3000/api/wilder/622715d29cbf5cddeca1124f/delete HTTP/1.1
+DELETE http://localhost:3000/api/wilder/622762cfabaca9042552f293/delete HTTP/1.1
 content-type: application/json
 
 ### UPDATE WILDERS 

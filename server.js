@@ -14,8 +14,8 @@ mongoose
   .then(() => console.log("Connected to database"))
   .catch((err) => console.log(err));
 
-  app.use(express.urlencoded({ extended: true }));
-  app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
+app.use(express.json());
 
 // routes
 app.get("/", (req, res) => res.send("Hello World"))
